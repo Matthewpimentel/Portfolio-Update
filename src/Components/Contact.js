@@ -17,6 +17,7 @@ const Contact = forwardRef((props, ref) => {
           <input type="email" name="email" placeholder="Email" />
           <textarea name="message" placeholder="Message"></textarea>
           <button type="submit">Send</button>
+          <input type="hidden" name="form-name" value="contact" />
       </form>
     </div>
   );
