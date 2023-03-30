@@ -1,17 +1,26 @@
 import { AiFillHtml5 } from "react-icons/ai";
-import { DiCss3, DiJavascript1, DiReact, DiNodejs } from "react-icons/di";
-import Image from "../Images/Matt.jpg"
+import { SiJavascript } from "react-icons/si";
+import { DiCss3, DiReact, DiNodejs, DiJavascript1 } from "react-icons/di";
+import Image from "../Images/Matt.jpg";
 import "./HomeAbout.css";
-const HomeAbout = () => {
+import { forwardRef, useRef, useImperativeHandle } from "react";
+const HomeAbout = forwardRef((props, ref) => {
+  const homeRef = useRef();
 
+  useImperativeHandle(ref, () => ({
+    scrollIntoView: () => {
+      homeRef.current.scrollIntoView({ behavior: "smooth" });
+    },
+  }));
 
   return (
-    <div className="home-about">
+    <div className="home-about" ref={homeRef}>
       <div className="home-about-content-container">
         <div className="home-about-blurb">
           <h1>Full-Stack Developer 👋</h1>
           <p>
-            Hi im Matthew Pimentel, A passionate developer based in Ontario, Canada&nbsp; 📍
+            Hi im Matthew Pimentel, A passionate developer based in Ontario,
+            Canada&nbsp; 📍
           </p>
         </div>
 
@@ -21,17 +30,27 @@ const HomeAbout = () => {
       </div>
       <div className="home-about-tech">
         <div className="home-about-tech-spacer">
-          <h1>Tech Stack</h1>
-          <h1>|</h1>
+          <h2>Tech Stack</h2>
+          <h2>|</h2>
         </div>
-        <AiFillHtml5 size={50} />
-        <DiCss3 size={50} />
-        <DiJavascript1 size={50} />
-        <DiReact size={50} />
-        <DiNodejs size={50} />
+        <div className="icon-holder">
+          <AiFillHtml5 size={50} className="icon-html" />
+        </div>
+        <div className="icon-holder">
+          <DiCss3 size={50} className="icon-css" />
+        </div>
+        <div className="icon-holder">
+          <DiJavascript1 size={50} className="icon-js" />
+        </div>
+        <div className="icon-holder">
+          <DiReact size={50} className="icon-react" />
+        </div>
+        <div className="icon-holder">
+          <DiNodejs size={50} className="icon-node" />
+        </div>
       </div>
     </div>
   );
-};
+});
 
 export default HomeAbout;

@@ -1,5 +1,7 @@
 import "./Projects.css";
 import lilypad from "../Images/lilypadpaper.JPG";
+import dealbuddy from "../Images/dealbuddy.JPG";
+import pokedex from "../Images/pokedex.JPG";
 import {
   useEffect,
   useState,
@@ -7,14 +9,17 @@ import {
   forwardRef,
   useImperativeHandle,
 } from "react";
+
 const Project = forwardRef((props, ref) => {
   const projectRef = useRef();
 
   useImperativeHandle(ref, () => ({
     scrollIntoView: () => {
-      projectRef.current.scrollIntoView({ behavior: "smooth" });
+      projectRef.current.scrollIntoView({ behavior: "smooth"});
+      console.log(projectRef.current);
     },
   }));
+  
 
   const [elements, setElements] = useState([]);
 
@@ -40,6 +45,7 @@ const Project = forwardRef((props, ref) => {
     });
   });
 
+
   useEffect(() => {
     setElements(document.querySelectorAll("[class^=project-info]"));
   }, []);
@@ -48,9 +54,13 @@ const Project = forwardRef((props, ref) => {
     observer.observe(element);
   });
 
+  const goToLink = (link) => {
+    window.open(link, "_blank");
+  }
+
   return (
-    <div className="projects-container">
-      <div className="projects-title" ref={projectRef}>
+    <div className="projects-container" ref={projectRef}>
+      <div className="projects-title">
         <h3>PORTFOLIO</h3>
       </div>
       <div className="project-info-left">
@@ -65,11 +75,15 @@ const Project = forwardRef((props, ref) => {
           <h3>
             React &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Node
           </h3>
+          <div className="projects-links">
+            <button onClick={() => goToLink("https://github.com/Matthewpimentel/lilypadpaper")}>Code</button>
+            <button onClick={() => goToLink("https://www.lilypadpaper.ca/")}>Live Site</button>
+          </div>
         </div>
       </div>
       <div className="project-info-right">
         <div className="projects-info-blurb">
-          <h3>LilyPad Paper & Co</h3>
+          <h3>DealBuddy 🎮</h3>
           <p>
             An E-commerce website which allows users to purchase items. The
             website has the ability to purchase items, ship items and store
@@ -78,11 +92,15 @@ const Project = forwardRef((props, ref) => {
           <h3>
             React &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Node
           </h3>
+          <div className="projects-links">
+            <button onClick={() => goToLink("https://github.com/Matthewpimentel/DealBuddy")}>Code</button>
+            <button onClick={() => goToLink("https://www.dealbuddy.ca/")}>Live Site</button>
+          </div>
         </div>
-        <img src={lilypad}></img>
+        <img src={dealbuddy}></img>
       </div>
       <div className="project-info-left">
-        <img src={lilypad}></img>
+        <img src={pokedex}></img>
         <div className="projects-info-blurb">
           <h3>LilyPad Paper & Co 📖</h3>
           <p>
@@ -91,8 +109,12 @@ const Project = forwardRef((props, ref) => {
             items in the cart.
           </p>
           <h3>
-            React &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Node
+            React
           </h3>
+          <div className="projects-links">
+            <button onClick={() => goToLink("https://github.com/Matthewpimentel/Pokedex")}>Code</button>
+            <button onClick={() => goToLink("https://eloquent-bohr-63da2d.netlify.app/")}>Live Site</button>
+          </div>
         </div>
       </div>
     </div>
