@@ -36,7 +36,7 @@
 .home-about-image img {
     width: 80%;
     border: 0.2em black solid;
-    border-radius: 77% 23% 70% 30% / 30% 30% 70% 70% ;
+    border-radius: 77% 23% 70% 30% / 30% 30% 70% 70%;
 }
 
 .home-about-tech {
@@ -46,9 +46,9 @@
 }
 
 
-.home-about-tech > * {
-   margin: 1rem;
-   size: 20;
+.home-about-tech>* {
+    margin: 1rem;
+    size: 20;
 }
 
 .home-about-tech-spacer {
@@ -59,7 +59,7 @@
     margin-left: 1rem;
 }
 
-.home-about-tech-spacer > * {
+.home-about-tech-spacer>* {
     margin: 0.5rem;
 }
 
@@ -93,4 +93,37 @@
     border-radius: 50%;
     padding: 0.5em;
     box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.09);
+}
+
+@media all and (max-width: 490px) {
+    .home-about-content-container {
+        flex-direction: column;
+    }
+
+    .home-about-blurb h1 {
+        font-size: 1.5rem;
+    }
+
+    .home-about-blurb p {
+        font-size: 1rem;
+    }
+
+    .home-about-image {
+        width: 80%;
+    }
+
+    .home-about-tech {
+        justify-content: center;
+        width: 100%;
+        margin: 1rem;
+    }
+
+    .home-about-tech-spacer {
+        margin: 1rem;
+    }
+
+    .icon-holder {
+        height: 35%;
+    }
+
 }

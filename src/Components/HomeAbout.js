@@ -3,7 +3,7 @@ import { SiJavascript } from "react-icons/si";
 import { DiCss3, DiReact, DiNodejs, DiJavascript1 } from "react-icons/di";
 import Image from "../Images/Matt.jpg";
 import "./HomeAbout.css";
-import { forwardRef, useRef, useImperativeHandle } from "react";
+import { forwardRef, useRef, useImperativeHandle, useEffect } from "react";
 const HomeAbout = forwardRef((props, ref) => {
   const homeRef = useRef();
 
@@ -12,6 +12,7 @@ const HomeAbout = forwardRef((props, ref) => {
       homeRef.current.scrollIntoView({ behavior: "smooth" });
     },
   }));
+
 
   return (
     <div className="home-about" ref={homeRef}>
@@ -34,19 +35,19 @@ const HomeAbout = forwardRef((props, ref) => {
           <h2>|</h2>
         </div>
         <div className="icon-holder">
-          <AiFillHtml5 size={50} className="icon-html" />
+          <AiFillHtml5 size={30} className="icon-html" />
         </div>
         <div className="icon-holder">
-          <DiCss3 size={50} className="icon-css" />
+          <DiCss3 size={30} className="icon-css" />
         </div>
         <div className="icon-holder">
-          <DiJavascript1 size={50} className="icon-js" />
+          <DiJavascript1 size={30} className="icon-js" />
         </div>
         <div className="icon-holder">
-          <DiReact size={50} className="icon-react" />
+          <DiReact size={30} className="icon-react" />
         </div>
         <div className="icon-holder">
-          <DiNodejs size={50} className="icon-node" />
+          <DiNodejs size={30} className="icon-node" />
         </div>
       </div>
     </div>
