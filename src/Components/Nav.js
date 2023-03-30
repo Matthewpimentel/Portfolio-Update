@@ -1,7 +1,11 @@
+import './Nav.css';
 const Nav = () => {
     return(
-        <div>
-            <h1>Hi</h1>
+        <div className="nav">
+            <h2>Matthew.dev</h2>
+            <a>Home</a>
+            <a>Projects</a>
+            <a>Contact</a>
         </div>
     )
 }

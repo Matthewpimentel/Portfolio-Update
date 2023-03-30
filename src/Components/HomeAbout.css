@@ -1,0 +1,50 @@
+.home-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.home-about-content-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-about-blurb {
+    width: 40%;
+}
+
+.home-about-blurb h1 {
+    font-size: 3rem;
+}
+
+.home-about-image {
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-about-tech {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.home-about-tech > * {
+   margin: 1rem;
+   size: 20;
+}
+
+.home-about-tech-spacer {
+    display: flex;
+    flex-direction: row;
+    margin: 3rem;
+}
+
+.home-about-tech-spacer > * {
+    margin: 1rem;
+}
