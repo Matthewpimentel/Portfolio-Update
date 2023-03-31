@@ -39,12 +39,11 @@
     width: 100%;
     z-index: 1;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0,0,0,.09);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .09);
     transition: 0.5s;
 }
 
 @media only screen and (max-width: 490px) {
-
     .nav {
         grid-template-columns: 40% 20% 20% 20%;
     }
@@ -60,6 +59,12 @@
 
 
 @media only screen and (max-width: 768px) {
+    .nav {
+        grid-template-columns: 40% 20% 20% 20%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
     .nav {
         grid-template-columns: 40% 20% 20% 20%;
     }
