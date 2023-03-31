@@ -32,10 +32,6 @@ const Nav = ({ refToProjects, refToHome, refToContact }) => {
     }
   };
 
-  const showMenu = () => {
-
-  }
-
   return (
       <div className="nav">
         <h2>Matthew.dev</h2>

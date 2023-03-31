@@ -16,7 +16,7 @@ const Project = forwardRef((props, ref) => {
   useImperativeHandle(ref, () => ({
     scrollIntoView: () => {
       projectRef.current.scrollIntoView({ behavior: "smooth"});
-      console.log(projectRef.current);
+
     },
   }));
   
@@ -85,12 +85,10 @@ const Project = forwardRef((props, ref) => {
         <div className="projects-info-blurb">
           <h3>DealBuddy 🎮</h3>
           <p>
-            An E-commerce website which allows users to purchase items. The
-            website has the ability to purchase items, ship items and store
-            items in the cart.
+            A web application that allows users to see video game sales. Created a web scraper using puppeteer to scrape data from Humblebundle. Users can sign up and login to set alerts for games.
           </p>
           <h3>
-            React &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Node
+            React &nbsp; &nbsp; &nbsp; &nbsp; Node &nbsp; &nbsp; &nbsp; &nbsp; noSQL
           </h3>
           <div className="projects-links">
             <button onClick={() => goToLink("https://github.com/Matthewpimentel/DealBuddy")}>Code</button>
@@ -104,9 +102,7 @@ const Project = forwardRef((props, ref) => {
         <div className="projects-info-blurb">
           <h3>LilyPad Paper & Co 📖</h3>
           <p>
-            An E-commerce website which allows users to purchase items. The
-            website has the ability to purchase items, ship items and store
-            items in the cart.
+            A web application that uses PokeAPI to display information about Pokemon and Items from the series.
           </p>
           <h3>
             React
