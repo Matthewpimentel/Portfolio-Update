@@ -12,15 +12,13 @@ const HomeAbout = forwardRef((props, ref) => {
       homeRef.current.scrollIntoView({ behavior: "smooth" });
     },
   }));
-
-
   return (
     <div className="home-about" ref={homeRef}>
       <div className="home-about-content-container">
         <div className="home-about-blurb">
           <h1>Full-Stack Developer 👋</h1>
           <p>
-            Hi im Matthew Pimentel, A passionate developer based in Ontario,
+            Hi Im Matthew Pimentel, A passionate developer based in Ontario,
             Canada&nbsp; 📍
           </p>
         </div>

@@ -1,4 +1,5 @@
 import "./Nav.css";
+import { GiHamburgerMenu } from "react-icons/gi";
 const Nav = ({ refToProjects, refToHome, refToContact }) => {
   let windowY;
   window.addEventListener("scroll", () => {
@@ -14,10 +15,10 @@ const Nav = ({ refToProjects, refToHome, refToContact }) => {
   });
 
   const scrollToHome = () => {
-    if(refToHome.current) {
+    if (refToHome.current) {
       refToHome.current.scrollIntoView();
     }
-  }
+  };
 
   const scrollToProjects = () => {
     if (refToProjects.current) {
@@ -31,13 +32,17 @@ const Nav = ({ refToProjects, refToHome, refToContact }) => {
     }
   };
 
+  const showMenu = () => {
+
+  }
+
   return (
-    <div className="nav">
-      <h2>Matthew.dev</h2>
-      <a onClick={scrollToHome}>Home</a>
-      <a onClick={scrollToProjects}>Projects</a>
-      <a onClick={scrollToContact}>Contact</a>
-    </div>
+      <div className="nav">
+        <h2>Matthew.dev</h2>
+        <a onClick={scrollToHome}>Home</a>
+        <a onClick={scrollToProjects}>Projects</a>
+        <a onClick={scrollToContact}>Contact</a>
+      </div>
   );
 };
 

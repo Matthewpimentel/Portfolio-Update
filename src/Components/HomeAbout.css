@@ -97,6 +97,7 @@
 
 @media all and (max-width: 490px) {
     .home-about-content-container {
+        padding: 2rem;
         flex-direction: column;
     }
 
