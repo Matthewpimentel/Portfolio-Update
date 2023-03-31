@@ -87,8 +87,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 30%;
+    width: 95%;
+    height: 25%;
     background-color: white;
     border-radius: 50%;
     padding: 0.5em;
@@ -98,6 +98,12 @@
 @media all and (max-width: 490px) {
     .home-about-content-container {
         flex-direction: column;
+    }
+
+    .home-about-blurb {
+        width: 70%;
+        text-align: center;
+        margin-bottom: 3rem;
     }
 
     .home-about-blurb h1 {
@@ -110,6 +116,7 @@
 
     .home-about-image {
         width: 80%;
+        margin-bottom: 3rem;
     }
 
     .home-about-tech {
@@ -119,11 +126,17 @@
     }
 
     .home-about-tech-spacer {
-        margin: 1rem;
+        margin: 0.5rem;
     }
 
     .icon-holder {
-        height: 35%;
+        height: 40%;
+        margin: 0.5rem;
+    }
+
+    .home-about-tech-spacer h2 {
+        font-size: 1rem;
+        margin: 0.5;
     }
 
 }
