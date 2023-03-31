@@ -18,7 +18,7 @@ const HomeAbout = forwardRef((props, ref) => {
         <div className="home-about-blurb">
           <h1>Full-Stack Developer 👋</h1>
           <p>
-            Hi Im Matthew Pimentel, A passionate developer based in Ontario,
+            Hi I'm Matthew Pimentel, A passionate developer based in Ontario,
             Canada&nbsp; 📍
           </p>
         </div>

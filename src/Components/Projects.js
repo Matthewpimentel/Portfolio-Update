@@ -100,7 +100,7 @@ const Project = forwardRef((props, ref) => {
       <div className="project-info-left">
         <img src={pokedex}></img>
         <div className="projects-info-blurb">
-          <h3>LilyPad Paper & Co 📖</h3>
+          <h3>Pokedex 🕹️</h3>
           <p>
             A web application that uses PokeAPI to display information about Pokemon and Items from the series.
           </p>
