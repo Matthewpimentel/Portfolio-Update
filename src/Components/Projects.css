@@ -132,7 +132,7 @@
     }
 }
 
-@media all and (max-width: 490px) {
+@media only screen and (max-width: 490px) {
     .project-info-left {
         flex-direction: column;
         width: 90%;
@@ -156,4 +156,31 @@
         margin: 0;
         width: 100%;
     }
+}
+
+@media only screen and (min-width: 768px) {
+    .project-info-left {
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+    }
+
+    .project-info-right {
+        flex-direction: column-reverse;
+        width: 90%;
+        align-items: center;
+    }
+
+    .project-info-left > * {
+        padding: 1em;
+        margin: 0;
+        width: 100%;
+    }
+
+    .project-info-right > * {
+        padding: 1em;
+        margin: 0;
+        width: 100%;
+    }
+
 }

@@ -7,11 +7,12 @@
 .nav {
     position: fixed;
     display: grid;
-    grid-template-columns: 40% 20% 20% 20%;
+    grid-template-columns: 80% 5% 5% 5% 5%;
     align-items: center;
     padding: 0.5em;
     width: 100%;
     transition: 0.5s;
+    padding-left: 1rem;
 }
 
 .nav a {
@@ -42,12 +43,24 @@
     transition: 0.5s;
 }
 
-@media all and (max-width: 490px) {
+@media only screen and (max-width: 490px) {
+
+    .nav {
+        grid-template-columns: 40% 20% 20% 20%;
+    }
+
     .nav h2 {
-        font-size: 0.8rem;
+        font-size: 4vw;
     }
 
     .nav a {
-        font-size: 0.8rem;
+        font-size: 3vw;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .nav {
+        grid-template-columns: 40% 20% 20% 20%;
     }
 }
