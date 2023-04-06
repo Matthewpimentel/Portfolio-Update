@@ -16,7 +16,7 @@ const HomeAbout = forwardRef((props, ref) => {
     <div className="home-about" ref={homeRef}>
       <div className="home-about-content-container">
         <div className="home-about-blurb">
-          <h1>Full-Stack Developer 👋</h1>
+          <h1>Front End Developer 👋</h1>
           <p>
             Hi I'm Matthew Pimentel, A passionate developer based in Ontario,
             Canada&nbsp; 📍
