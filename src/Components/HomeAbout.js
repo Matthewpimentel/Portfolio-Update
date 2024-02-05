@@ -16,7 +16,7 @@ const HomeAbout = forwardRef((props, ref) => {
     <div className="home-about" ref={homeRef}>
       <div className="home-about-content-container">
         <div className="home-about-blurb">
-          <h1>Front End Developer 👋</h1>
+          <h1>Software Developer 👋</h1>
           <p>
             Hi I'm Matthew Pimentel, A passionate developer based in Ontario,
             Canada&nbsp; 📍
@@ -32,20 +32,35 @@ const HomeAbout = forwardRef((props, ref) => {
           <h2>Tech Stack</h2>
           <h2>|</h2>
         </div>
-        <div className="icon-holder">
-          <AiFillHtml5 size={30} className="icon-html" />
+        <div className="icon-container">
+          <div className="icon-holder">
+            <AiFillHtml5 size={30} className="icon-html" />
+          </div>
+          <h2>HTML5</h2>
         </div>
-        <div className="icon-holder">
-          <DiCss3 size={30} className="icon-css" />
+        <div className="icon-container">
+          <div className="icon-holder">
+            <DiCss3 size={30} className="icon-css" />
+          </div>
+          <h2>CSS3</h2>
         </div>
+        <div className="icon-container">
         <div className="icon-holder">
           <DiJavascript1 size={30} className="icon-js" />
         </div>
+        <h2>JavaScript</h2>
+        </div>
+        <div className="icon-container">
         <div className="icon-holder">
           <DiReact size={30} className="icon-react" />
         </div>
+        <h2>ReactJS</h2>
+        </div>
+        <div className="icon-container">
         <div className="icon-holder">
           <DiNodejs size={30} className="icon-node" />
+        </div>
+        <h2>NodeJS</h2>
         </div>
       </div>
     </div>

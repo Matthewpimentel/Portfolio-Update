@@ -42,7 +42,7 @@
 .home-about-tech {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: center; 
 }
 
 
@@ -83,12 +83,23 @@
     color: #339933;
 }
 
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 95px;
+}
+
+.icon-container h2 {
+    margin: 0 0 0 0;
+}
+
 .icon-holder {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 95%;
-    height: 25%;
+    width: 50%;
     background-color: white;
     border-radius: 50%;
     padding: 0.5em;
@@ -128,6 +139,11 @@
 
     .home-about-tech-spacer {
         margin: 0.5rem;
+    }
+
+    .icon-container {
+        font-size: 0.5rem;
+        width: 35px;
     }
 
     .icon-holder {
