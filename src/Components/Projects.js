@@ -2,6 +2,7 @@ import "./Projects.css";
 import lilypad from "../Images/lilypadpaper.JPG";
 import dealbuddy from "../Images/dealbuddy.JPG";
 import pokedex from "../Images/pokedex.JPG";
+import minigames from "../Images/minigames.jpg"
 import {
   useEffect,
   useState,
@@ -62,6 +63,22 @@ const Project = forwardRef((props, ref) => {
     <div className="projects-container" ref={projectRef}>
       <div className="projects-title">
         <h3>PORTFOLIO</h3>
+      </div>
+      <div className="project-info-right">
+        <div className="projects-info-blurb">
+          <h3>Minigames Hub 🎮</h3>
+          <p>
+            A web application that allows users to play various minigames! The Tic Tac Toe AI was coded from scratch using a Minimax algorithim.
+          </p>
+          <h3>
+            React &nbsp; &nbsp; &nbsp; &nbsp; CSS 
+          </h3>
+          <div className="projects-links">
+            <button onClick={() => goToLink("https://github.com/Matthewpimentel/mini-games")}>Code</button>
+            <button onClick={() => goToLink("https://matthewminigames.netlify.app/")}>Live Site</button>
+          </div>
+        </div>
+        <img src={minigames}></img>
       </div>
       <div className="project-info-left">
         <img src={lilypad}></img>
